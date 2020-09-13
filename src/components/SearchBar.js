@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 export default class SearchBar extends Component {
-  handleChange = (event) => {
+  handleInputChange = (event) => {
     console.log(event.target.value);
   };
   render() {
@@ -9,10 +9,8 @@ export default class SearchBar extends Component {
       <div className="ui segment">
         <form className="ui form">
           <div className="field">
-            <label htmlFor="">
-              Image Search
-              <input type="text" onChange={this.handleChange} />{" "}
-            </label>
+            <label htmlFor="">Image Search</label>
+            <input type="text" onChange={this.handleInputChange} />{" "}
           </div>
         </form>
       </div>
